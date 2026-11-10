@@ -95,7 +95,7 @@ namespace BizHawk.Emulation.Cores.Nintendo.NES
 
 		public override byte ReadWram(int addr)
 		{
-			byte open_bus = 0xFF; //open bus
+			byte open_bus = NES.DB; //open bus
 			if (addr < 0x1000)
 				return open_bus;
 
